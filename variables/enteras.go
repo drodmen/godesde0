@@ -12,4 +12,5 @@ func MuestroEnteros() {
 	fmt.Println("intcumon = ", intcomun)
 	fmt.Println("intde32 = ", intde32)
 	fmt.Println("intde64 = ", intde64)
+	fmt.Println(Nombre)
 }

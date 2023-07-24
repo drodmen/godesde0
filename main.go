@@ -1,7 +1,10 @@
 package main
 
 import (
-	"github.com/drodmen/godesde0/ejercicios" // VÍDEO 3.16
+	//"fmt"
+
+	"github.com/drodmen/godesde0/files" // VÍDEO 3.17
+	//"github.com/drodmen/godesde0/ejercicios" // VÍDEO 3.16
 	//"github.com/drodmen/godesde0/iteraciones" // VÍDEO 3.15
 	//"github.com/drodmen/godesde0/teclado" // VÍDEO 3.14
 	//"github.com/drodmen/godesde0/ejercicios" // VÍDEO 3.13
@@ -33,6 +36,12 @@ func main() {
 	//iteraciones.Iterar() // video 3.15
 
 	// vídeo 3.16 Ejercicio 02
-	ejercicios.TablasMultiplicar()
+	//ejercicios.TablasMultiplicar()
 
+	//vídeo 3.17 Manejo de archivos en go
+	//fmt.Println(ejercicios.TablasMultiplicar())
+
+	//files.GrabaTabla()
+	//files.SumaTabla()
+	files.LeoArchivo()
 }

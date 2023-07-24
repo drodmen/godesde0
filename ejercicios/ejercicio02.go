@@ -16,8 +16,11 @@ import (
 
 var num1 int // número que será introducido por el usuario desde teclado
 var err error
+var texto string //variable que guarda toda la tabla de multiplicar, esta no es necesaria para el ejercicio 02
 
-func TablasMultiplicar() {
+// func TablasMultiplicar() { // con esta función valdría para el ejercicio 02
+func TablasMultiplicar() string {
+
 	scanner := bufio.NewScanner(os.Stdin) // variable que proviene del paquete bufio, que va a leer desde os. Stdin es entrada que es teclado stdout es pantalla que es salida
 
 	//Validación de la introducción del valor
@@ -35,6 +38,9 @@ func TablasMultiplicar() {
 	}
 
 	for i := 1; i <= 10; i++ {
-		fmt.Println(num1, "x", i, " = ", num1*i)
+		//fmt.Println(num1, "x", i, " = ", num1*i) // para ejercicio 02.
+		texto += fmt.Sprintln(num1, "x", i, " = ", num1*i) // en vez de mostrar por pantalla, me devuelve un string, que se guarda en la variable texto
 	}
+
+	return texto //devuelve el valor string
 }

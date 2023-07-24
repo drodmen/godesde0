@@ -30,6 +30,6 @@ func main() {
 	}*/
 
 	iteraciones.Iterar()
-	// prueba
+	// prueba de subo.bat
 
 }

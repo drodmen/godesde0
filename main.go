@@ -3,7 +3,8 @@ package main
 import (
 	//"fmt"
 
-	"github.com/drodmen/godesde0/files" // VÍDEO 3.17
+	"github.com/drodmen/godesde0/funciones" // VÍDEO 3.18
+	//"github.com/drodmen/godesde0/files" // VÍDEO 3.17
 	//"github.com/drodmen/godesde0/ejercicios" // VÍDEO 3.16
 	//"github.com/drodmen/godesde0/iteraciones" // VÍDEO 3.15
 	//"github.com/drodmen/godesde0/teclado" // VÍDEO 3.14
@@ -43,5 +44,12 @@ func main() {
 
 	//files.GrabaTabla()
 	//files.SumaTabla()
-	files.LeoArchivo()
+	//files.LeoArchivo()
+
+	//VIDEO 3.18
+	//funciones.Calculos()
+	//funciones.LlamarClosure()
+
+	//VÍDEO 3.19
+	funciones.Exponencia(2)
 }

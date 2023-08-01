@@ -1,9 +1,12 @@
 package main
 
 import (
-	//"fmt"
+	"fmt"
+
+	//VÍDEO 3.25
+	f "github.com/drodmen/godesde0/goroutines"
 	//VÍDEO 3.24
-	d "github.com/drodmen/godesde0/deferPanic"
+	//d "github.com/drodmen/godesde0/deferPanic"
 	//VÍDEO 3.23
 	//e "github.com/drodmen/godesde0/ejer_interfaces" // la e esun ALIAS
 	//"github.com/drodmen/godesde0/modelos"
@@ -79,7 +82,24 @@ func main() {
 	// Maria := new(modelos.Mujer)
 	// e.HumanosRespirando(Maria)
 
-	d.VemosDefer()
-	d.EjemploPanic() //vale para abortar el software un recover recuperar, tras un panic
+	// VÍDEO 3.25
+	//d.VemosDefer()
+	//d.EjemploPanic() //vale para abortar el software un recover recuperar, tras un panic
+
+	// VÍDEO 3.25
+	// go f.MiNombreLento("Diego Rodríguez") // añadiendo go delante, se hace asíncronamente la función que se escriba
+
+	// fmt.Println("Estoy aquí")
+	// var x string
+	// fmt.Scanln(&x)
+
+	//VÍDEO 3.26
+	canal1 := make(chan bool)
+
+	go f.MiNombreLento("Diego Rodríguez", canal1) // añadiendo go delante, se hace asíncronamente la función que se escriba
+	defer func() {
+		<-canal1
+	}()
+	fmt.Println("Estoy aquí")
 
 }

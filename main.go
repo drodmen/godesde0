@@ -3,7 +3,10 @@ package main
 import (
 	//"fmt"
 
-	"github.com/drodmen/godesde0/funciones" // VÍDEO 3.18
+	"github.com/drodmen/godesde0/arreglos_slices/mapas" // VÍDEO 3.21
+	//"github.com/drodmen/godesde0/mapas" // VÍDEO 3.21
+	//"github.com/drodmen/godesde0/arreglos_slices"	// VÍDEO 3.20
+	//"github.com/drodmen/godesde0/funciones" // VÍDEO 3.18
 	//"github.com/drodmen/godesde0/files" // VÍDEO 3.17
 	//"github.com/drodmen/godesde0/ejercicios" // VÍDEO 3.16
 	//"github.com/drodmen/godesde0/iteraciones" // VÍDEO 3.15
@@ -51,5 +54,14 @@ func main() {
 	//funciones.LlamarClosure()
 
 	//VÍDEO 3.19
-	funciones.Exponencia(2)
+	//funciones.Exponencia(2)
+
+	//VÍDEO 3.20
+	//arreglos_slices.MuestroArreglos()
+	//arreglos_slices.MuestroSlices()
+	//arreglos_slices.Capacidad()
+
+	//VÍDEO 3.21
+	mapas.MostrarMapas()
+
 }

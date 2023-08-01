@@ -2,8 +2,12 @@ package main
 
 import (
 	//"fmt"
-
-	"github.com/drodmen/godesde0/users"
+	//VÍDEO 3.24
+	d "github.com/drodmen/godesde0/deferPanic"
+	//VÍDEO 3.23
+	//e "github.com/drodmen/godesde0/ejer_interfaces" // la e esun ALIAS
+	//"github.com/drodmen/godesde0/modelos"
+	//"github.com/drodmen/godesde0/users" //VÍDEO 3.22
 	//"github.com/drodmen/godesde0/arreglos_slices/mapas" // VÍDEO 3.21
 	//"github.com/drodmen/godesde0/mapas" // VÍDEO 3.21
 	//"github.com/drodmen/godesde0/arreglos_slices"	// VÍDEO 3.20
@@ -66,6 +70,16 @@ func main() {
 	//mapas.MostrarMapas()
 
 	//VÍDEO 3.22
-	users.AltaUsuario()
+	//users.AltaUsuario()
+
+	//VÍDEO 3.23
+	// Pedro := new(modelos.Hombre)
+	// e.HumanosRespirando(Pedro)
+
+	// Maria := new(modelos.Mujer)
+	// e.HumanosRespirando(Maria)
+
+	d.VemosDefer()
+	d.EjemploPanic() //vale para abortar el software un recover recuperar, tras un panic
 
 }

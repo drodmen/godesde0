@@ -3,7 +3,8 @@ package main
 import (
 	//"fmt"
 
-	"github.com/drodmen/godesde0/arreglos_slices/mapas" // VÍDEO 3.21
+	"github.com/drodmen/godesde0/users"
+	//"github.com/drodmen/godesde0/arreglos_slices/mapas" // VÍDEO 3.21
 	//"github.com/drodmen/godesde0/mapas" // VÍDEO 3.21
 	//"github.com/drodmen/godesde0/arreglos_slices"	// VÍDEO 3.20
 	//"github.com/drodmen/godesde0/funciones" // VÍDEO 3.18
@@ -62,6 +63,9 @@ func main() {
 	//arreglos_slices.Capacidad()
 
 	//VÍDEO 3.21
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
+
+	//VÍDEO 3.22
+	users.AltaUsuario()
 
 }
